@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+/* Stopwatch Display */
+#display {
+  font-size: 3em;
+  margin: 20px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffd5;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffd5;
+}
+
+.start {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.pause {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.reset {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.lap {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+/* Lap Times */
+#laps {
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#laps li {
+  background-color: rgba(255, 255, 255, 0.08);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
